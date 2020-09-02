@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action = '/url/' method = 'post'>
+    {%csrf_token%}
+<div class = 'firldWrapper'>
+        <label for ="{{form.url.id_for_label}}">User name: </label>
+        {{form.url}}
+</div>
+    <input type="submit" value="Send">
+</body>
+</html>
